@@ -508,25 +508,36 @@ section {
 }
 
 .mentors-note {
-  margin: 0 0 1.8rem;
+  margin: 0;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.mentors-role {
+  margin: 2.6rem 0 1.7rem;
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  font-weight: 700;
 }
 
 .mentor-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.85rem 1.2rem;
-  max-width: 640px;
+  column-gap: 1.25rem;
+  row-gap: 1.15rem;
+  max-width: 26rem;
   margin: 0 auto;
-  text-align: left;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
 
-.mentor-grid dt,
-.mentor-grid dd {
-  margin: 0;
-  padding: 0.55rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
-  font-weight: 600;
+.mentor-grid li {
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.mentor-grid li:only-child {
+  grid-column: 1 / -1;
 }
 
 /* Testimonials */
@@ -668,11 +679,9 @@ section {
   width: auto;
   max-width: 220px;
   object-fit: contain;
-  mix-blend-mode: screen;
 }
 
 .org-slide--light img {
-  mix-blend-mode: normal;
   background: rgba(255, 255, 255, 0.96);
   padding: 0.45rem 0.65rem;
   border-radius: 8px;
