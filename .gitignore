@@ -1,0 +1,6 @@
+.DS_Store
+.cursor/
+design-system/
+*.log
+.vscode/
+.idea/
