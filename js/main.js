@@ -129,7 +129,7 @@
     var groups = [
       [".hero-kicker", ".hero-bottom"],
       [".problem .wrap > *"],
-      [".curriculum h2", ".mm-center", ".mm-node"],
+      [".curriculum h2", ".mm-center", ".mm-node", ".curriculum-note"],
       [".empathy .wrap > *", ".empathy-stats > *", ".empathy-photo-copy > *"],
       [".book .wrap > *", ".mentors .wrap > *"],
       [".testimonials .carousel"],

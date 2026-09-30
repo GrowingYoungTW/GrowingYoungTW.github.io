@@ -251,13 +251,13 @@ a {
 }
 
 .problem h2 {
-  margin: 0 0 0.8rem;
+  margin: 0 0 2.2rem;
   font-size: clamp(1.7rem, 3.6vw, 2.75rem);
   font-weight: 900;
 }
 
 .problem-sub {
-  margin: 0 0 2.2rem;
+  margin: 0 0 1.4rem;
   font-size: clamp(1.1rem, 2.1vw, 1.7rem);
   font-weight: 900;
 }
@@ -292,10 +292,11 @@ section {
 
 .curriculum h2 {
   margin: 0 0 2.5rem;
-  font-size: clamp(2.1rem, 5.2vw, 59.2px);
+  font-size: clamp(2.1rem, 5.2vw, 68px);
   font-weight: 900;
   line-height: 1.23;
   text-align: left;
+  text-wrap: balance;
 }
 
 .mindmap-wrapper {
@@ -352,6 +353,25 @@ section {
 .mm-center span {
   padding-bottom: 0.5rem;
   border-bottom: 6px double rgba(255, 255, 255, 0.9);
+}
+
+.curriculum-note {
+  margin: 3rem auto 0.5rem;
+  max-width: 46rem;
+  text-align: center;
+  font-size: clamp(1.45rem, 2.8vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.curriculum-note::before {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin: 0 auto 1.05rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 /* Empathy */
@@ -1168,7 +1188,11 @@ section {
 }
 
 @media (min-width: 768px) {
-  .curriculum h2,
+
+  .curriculum h2 {
+    font-size: 68px;
+  }
+
   .empathy h2,
   .empathy-conference,
   .empathy-photo-copy h3 {
@@ -1417,6 +1441,7 @@ section {
 .js .hero-bottom,
 .js .problem .wrap>*,
 .js .curriculum h2,
+.js .curriculum-note,
 .js .empathy .wrap>*,
 .js .empathy-stats>*,
 .js .empathy-photo-copy>*,
@@ -1447,6 +1472,7 @@ section {
 .js .hero-bottom.is-in,
 .js .problem .wrap>*.is-in,
 .js .curriculum h2.is-in,
+.js .curriculum-note.is-in,
 .js .empathy .wrap>*.is-in,
 .js .empathy-stats>*.is-in,
 .js .empathy-photo-copy>*.is-in,
@@ -1483,6 +1509,7 @@ section {
   .js .hero-bottom,
   .js .problem .wrap>*,
   .js .curriculum h2,
+  .js .curriculum-note,
   .js .mm-center,
   .js .mm-node,
   .js .empathy .wrap>*,
