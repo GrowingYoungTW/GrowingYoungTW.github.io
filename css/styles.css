@@ -1388,6 +1388,12 @@ section {
   }
 }
 
+@media (max-width: 959px) {
+  .curriculum h2 {
+    text-align: center;
+  }
+}
+
 @media (max-width: 767px) {
   .problem-title {
     white-space: normal;
