@@ -801,9 +801,11 @@ section {
 }
 
 .sub-text {
+  display: block;
+  margin-top: 0.75rem;
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.85);
-  margin-left: 0.4rem;
+  line-height: 1.6;
 }
 
 .price-old {
