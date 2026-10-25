@@ -540,10 +540,9 @@ section {
 
 .mentor-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1.25rem;
-  row-gap: 1.15rem;
-  max-width: 26rem;
+  grid-template-columns: 1fr;
+  row-gap: 1.35rem;
+  max-width: 18rem;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -554,6 +553,17 @@ section {
   font-size: clamp(1.05rem, 1.6vw, 1.22rem);
   font-weight: 500;
   line-height: 1.45;
+}
+
+.mentor-org,
+.mentor-name {
+  display: block;
+  white-space: nowrap;
+}
+
+.mentor-name {
+  margin-top: 0.2rem;
+  font-weight: 600;
 }
 
 .mentor-grid li:only-child {
